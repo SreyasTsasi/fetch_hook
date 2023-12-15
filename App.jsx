@@ -8,7 +8,7 @@ import useFetch from "./hooks/fetch.hook.js";
 function App(){
     
     if(import.meta.env.MODE =="development") {
-        axios.defaults.baseURL="http://locahost:3000"
+        axios.defaults.baseURL="http://localhost:3000"
     }
     const [{apiData,status, isLoading, error }] =useFetch("/api/get-data");
 
